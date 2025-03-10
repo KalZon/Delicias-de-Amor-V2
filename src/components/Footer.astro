@@ -1,0 +1,30 @@
+---
+import SocialPill from "./subComponents/SocialPill.astro"
+import FacebookIcon from "./icons/FacebookIcon.astro"
+import WhatsAppIcon from "./icons/WhatsAppIcon.astro"
+import InstagramIcon from "./icons/InstagramIcon.astro"
+import TikTokIcon from "./icons/TikTokIcon.astro"
+---
+
+<footer>
+    <hr class="absolute h-[2px] w-full min-w-[18rem] mt-5 border-t-0 bg-transparent bg-gradient-to-r from-transparent via-black to-transparent bg-center md:my-9">
+    <br>
+    <div class="flex flex-col justify-center items-center p-8">
+        <h1 class="text-3xl font-bold text-center">Delicias de Amor</h1>
+        <div class="flex flex-row gap-3 my-5">
+            <SocialPill href="https://www.facebook.com/CECAPD/photos?locale=es_LA">
+                <WhatsAppIcon/>
+            </SocialPill>
+            <SocialPill href="https://www.facebook.com/CECAPD/photos?locale=es_LA">
+                <InstagramIcon/>
+            </SocialPill>
+            <SocialPill href="https://www.facebook.com/CECAPD/photos?locale=es_LA">
+                <FacebookIcon/>
+            </SocialPill>
+            <SocialPill href="https://www.facebook.com/CECAPD/photos?locale=es_LA">
+                <TikTokIcon/>
+            </SocialPill>
+        </div>
+        <p>© Delicias de Amor - Todos los derechos reservados.</p>
+    </div>
+</footer>
