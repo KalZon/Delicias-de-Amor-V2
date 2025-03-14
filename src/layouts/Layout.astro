@@ -2,6 +2,8 @@
 import "../styles/global.css";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+
+const {title = "Delicias de Amor"} = Astro.props
 ---
 
 <!doctype html>
@@ -9,8 +11,8 @@ import Header from "../components/Header.astro";
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>Astro Basics</title>
+		<link rel="icon" type="image/png" href="/img/favicon-delicias.png" />
+		<title>{title}</title>
 	</head>
 	<body>
 		<Header/>
