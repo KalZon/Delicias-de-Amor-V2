@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+const CARDS = [
+    {
+        titulo: "Historia",
+        description: '"En mi sexto cumpleaños, mi mamá hizo una deliciosa torta y bocaditos que encantaron a todos. Este momento especial inspiró a mi mamá a explorar más la repostería. Pronto, su pasatiempo se convirtió en un negocio próspero, donde cada dulce está hecho con amor y dedicación. Todo empezó con una simple torta de cumpleaños, y ahora, su talento y creatividad hacen felices a muchos más."'
+    
+    },    
+    {
+        titulo: "Visión",
+        description: "Nos esforzamos por hacer que nuestra marca sea una parte integral de la vida trujillana. Queremos estar presentes en cada momento clave, desde los logros cotidianos hasta las grandes celebraciones. Nos comprometemos a enriquecer esas experiencias significativas, aportando calidad e innovación en cada interacción. Nuestro objetivo es fortalecer nuestro vínculo con la comunidad de Trujillo, asegurando que nuestra presencia sea reconocida y valorada."
+    },
+    {
+        titulo: "Misión",
+        description:"En Delicias de Amor nos dedicamos a deleitar a nuestros clientes con productos de repostería inspirados en la tradición artesanal. Nuestro objetivo es crear momentos de placer y satisfacción con cada bocado, fusionando calidad y autenticidad en cada creación.",
+    }
+]
+---
+<Layout title="Delicias de Amor | Nosotros">
+    <div class="grid grid-cols-3 gap-x-4">
+        {
+            CARDS.map(({titulo, description})=>{
+                return(
+                    <article class="bg-amber-200/60 p-4 rounded-md mt-24 text-center cursor-default hover:-translate-y-2 transition-all">
+                        <h2 class="text-2xl font-bold">{titulo}</h2>
+                        <hr class="h-[2px] w-full min-w-[18rem] mt-5 border-t-0 bg-transparent bg-gradient-to-r from-transparent via-black to-transparent bg-center md:my-3">
+                        <p class="text-pretty">{description}</p>
+                    </article>
+                )
+            })
+        }
+    </div>
+</Layout>
